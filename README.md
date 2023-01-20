@@ -1,4 +1,4 @@
 # Create new project
 ```php
-anupam-dixit/bootstrap-5-full-image-cover-template
+composer create-project laravel/laravel:^8.* ProjectName
 ```
