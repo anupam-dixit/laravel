@@ -16,3 +16,12 @@ public function boot()
     Schema::defaultStringLength(191);
 }
 ```
+### Upload file via CMD
+#### GoTO
+```shell
+wamp64\bin\mysql\mysql8.0.31\bin>
+```
+and 
+```shell
+mysql -u root -p invoiceskyviewad_insurance < C:\Users\ThinkPad\Downloads\invoiceskyviewad_insurance_latest_live.sql
+```
