@@ -8,7 +8,7 @@ public function getWorkshopMembersCountAttribute()
 {
   return DATA_YOU_WANT; 
 }
-``
+```
 This provided key automatic will be appended whenever model called.
 ### My case get count or other data with relashipship
 ```php
