@@ -32,4 +32,4 @@ public function getDomainAttribute($value)
    return array('domain_id'=>$value,'title'=>$domain->title);
 }
 ```
->Here get _CamelCase_ Attribute to be noted
+>Here get_CamelCase_Attribute to be noted
