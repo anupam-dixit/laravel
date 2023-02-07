@@ -24,11 +24,12 @@ public function getWorkshopMembersCountAttribute()
 
 ## Mutator
 To mutate existing key with custom conditions
-For example we have **domain** named field in database and we are using this Mutator on ***Domain*** model then
+For example we have ***domain*** named field in database and we are using this Mutator on ***Domain*** model then
 ```php
-public function get***Domain***Attribute($value)
+public function getDomainAttribute($value)
 { 
    $domain=Domain::find($value);
    return array('domain_id'=>$value,'title'=>$domain->title);
 }
 ```
+Here >get _CamelCase_ Attribute to be noted
