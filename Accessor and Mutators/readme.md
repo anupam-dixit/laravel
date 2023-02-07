@@ -1,4 +1,4 @@
-### Accessor
+## Accessor
 Use Below code in your model
 ```php
 protected $appends = ['workshop_members_count'];
@@ -21,3 +21,14 @@ public function getWorkshopMembersCountAttribute()
     return $this->membersCount(); 
  }
  ```
+
+## Mutator
+To mutate existing key with custom conditions
+For example we have **domain** named field in database and we are using this Mutator on ***Domain*** model then
+```php
+public function get***Domain***Attribute($value)
+{ 
+   $domain=Domain::find($value);
+   return array('domain_id'=>$value,'title'=>$domain->title);
+}
+```
